@@ -1,0 +1,86 @@
+---
+import { Menu, Search } from "@lucide/astro";
+import Facebook from "@/assets/icons/Facebook.svg";
+import YouTube from "@/assets/icons/YouTube.svg";
+import WhatsApp from "@/assets/icons/WhatsApp.svg";
+import Instagram from "@/assets/icons/Instagram.svg";
+---
+
+<header class="shadow-md max-w-285 w-full mx-auto">
+    <div
+        class="w-full mx-auto min-h-25 pl-10 flex items-center justify-between"
+    >
+        <div class="flex items-center gap-2 w-[50%]">
+            <div
+                class="w-10 h-10 bg-[#FF4D5A] rounded flex items-center justify-center"
+            >
+                <span class="text-white">A</span>
+            </div>
+            <span class="text-xl tracking-tight">Atra</span>
+        </div>
+
+        <!-- Social icons center -->
+        <nav
+            class="hidden md:flex items-center gap-6 flex-1 justify-end pr-10 border-gray-300 w-[50%]"
+        >
+            <a
+                href="https://www.facebook.com/profile.php?id=100092535210339"
+                target="_blank"
+                title="Managero Facebook"
+                aria-label="Ir al Facebook ManageroRD"
+                rel="nooperer noreferer"
+                class="size-6 flex items-center justify-center"
+            >
+                <Facebook class="size-4 text-primary" />
+            </a>
+            <a
+                href="https://www.youtube.com/@Managerord"
+                target="_blank"
+                aria-label="Ir al Youtube ManageroRD"
+                rel="nooperer noreferer"
+                title="Managero Youtube"
+                class="size-6 flex items-center justify-center"
+            >
+                <YouTube class="size-4 text-primary" />
+            </a>
+            <a
+                href="https://wa.me/18097191911"
+                target="_blank"
+                aria-label="Ir al Youtube ManageroRD"
+                rel="nooperer noreferer"
+                title="Managero Youtube"
+                class="size-6 flex items-center justify-center"
+            >
+                <WhatsApp class="size-4 text-primary" />
+            </a>
+            <a
+                href="https://www.instagram.com/managerord"
+                target="_blank"
+                aria-label="Ir al Youtube ManageroRD"
+                rel="nooperer noreferer"
+                title="Managero Youtube"
+                class="size-6 flex items-center justify-center"
+            >
+                <Instagram class="size-4 text-primary" />
+            </a>
+        </nav>
+
+        <!-- Search and Menu right -->
+        <div class="flex items-center gap-0">
+            <button
+                class="px-6 h-25 flex items-center justify-center bg-gray-100 transition-colors border-r border-gray-300 cursor-pointer"
+                aria-label="Search"
+                title="Search"
+            >
+                <Search class="size-6 text-gray-700" />
+            </button>
+            <button
+                class="px-6 h-25 flex items-center justify-center bg-[#FF4D5A] hover:bg-[#FF3D4A] transition-colors text-white cursor-pointer"
+                aria-label="Menu"
+                title="Menu"
+            >
+                <Menu class="size-6" />
+            </button>
+        </div>
+    </div>
+</header>
