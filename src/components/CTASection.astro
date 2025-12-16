@@ -1,0 +1,47 @@
+---
+import { Image } from "astro:assets";
+import bgProduct from "@/assets/images/products/bg-product.webp";
+---
+
+<!-- About Section -->
+<section class="grid md:grid-cols-2 bg-white min-h-screen">
+    <!-- Content -->
+    <div class="w-full flex items-center justify-end bg-primary">
+        <div class="max-w-xl pr-20">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-16 h-1 bg-orange"></div>
+                <header
+                    class="text-3xl md:text-4xl leading-tight font-bold text-white"
+                >
+                    Have an idea in your mind?
+                </header>
+            </div>
+
+            <p class="text-white mb-6 w-112.5">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elit, sed diam
+                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                erat, sed diam voluptua. At vero eos et accusam et justo duo
+                dolores et ea rebum. Stet clita kasd.
+            </p>
+
+            <!-- Small image -->
+            <div class="mt-8 w-full">
+                <Image
+                    src={bgProduct}
+                    alt="Creative workspace"
+                    class="w-full h-full object-cover"
+                />
+            </div>
+        </div>
+    </div>
+
+    <!-- Large Image -->
+    <div class="w-full h-full min-h-screen">
+        <Image
+            src={bgProduct}
+            alt="Creative workspace"
+            class="w-full h-full object-cover"
+            loading="eager"
+        />
+    </div>
+</section>
