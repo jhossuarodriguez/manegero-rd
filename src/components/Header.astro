@@ -5,7 +5,7 @@ import YouTube from "@/assets/icons/YouTube.svg";
 import WhatsApp from "@/assets/icons/WhatsApp.svg";
 import Instagram from "@/assets/icons/Instagram.svg";
 import { Image } from "astro:assets";
-import Logo from "@/assets/images/logo.webp";
+import ManageroLogo from "@/assets/images/logo.webp";
 ---
 
 <header
@@ -21,9 +21,9 @@ import Logo from "@/assets/images/logo.webp";
                 aria-label="Ir a la página principal de ManageroRD"
             >
                 <Image
-                    src={Logo}
+                    src={ManageroLogo}
                     alt="ManageroRD Logo"
-                    class="w-37.5 h-10"
+                    class="w-50 h-22.5 object-cover"
                     loading="eager"
                 />
             </a>
@@ -41,7 +41,7 @@ import Logo from "@/assets/images/logo.webp";
                 rel="noopener noreferrer"
                 class="size-6 flex items-center justify-center"
             >
-                <Facebook class="size-4 text-primary" />
+                <Facebook class="size-4 text-primary hover:text-orange" />
             </a>
             <a
                 href="https://www.youtube.com/@Managerord"
@@ -51,7 +51,7 @@ import Logo from "@/assets/images/logo.webp";
                 title="Managero Youtube"
                 class="size-6 flex items-center justify-center"
             >
-                <YouTube class="size-4 text-primary" />
+                <YouTube class="size-4 text-primary hover:text-orange" />
             </a>
             <a
                 href="https://wa.me/18097191911"
@@ -61,7 +61,7 @@ import Logo from "@/assets/images/logo.webp";
                 title="Managero Youtube"
                 class="size-6 flex items-center justify-center"
             >
-                <WhatsApp class="size-4 text-primary" />
+                <WhatsApp class="size-4 text-primary hover:text-orange" />
             </a>
             <a
                 href="https://www.instagram.com/managerord"
@@ -71,7 +71,7 @@ import Logo from "@/assets/images/logo.webp";
                 title="Managero Youtube"
                 class="size-6 flex items-center justify-center"
             >
-                <Instagram class="size-4 text-primary" />
+                <Instagram class="size-4 text-primary hover:text-orange" />
             </a>
         </nav>
 
@@ -85,7 +85,7 @@ import Logo from "@/assets/images/logo.webp";
                 <Search class="size-6 text-gray-700" />
             </button>
             <button
-                class="px-6 h-25 flex items-center justify-center bg-[#FF4D5A] hover:bg-[#FF3D4A] transition-colors text-white cursor-pointer"
+                class="px-6 h-25 flex items-center justify-center bg-primary hover:bg-orange transition-colors text-white cursor-pointer"
                 aria-label="Menu"
                 title="Menu"
             >
