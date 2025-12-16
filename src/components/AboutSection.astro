@@ -1,47 +1,45 @@
-{/* About Section */}
-<section class="py-24">
-    <div class="max-w-350 mx-auto px-8">
-        <div class="grid md:grid-cols-2 gap-20 items-center">
-            <div>
-                <div class="mb-8">
-                    <div class="w-16 h-1 bg-[#FF4D5A] mb-6"></div>
-                    <h2 class="mb-8 leading-tight">
-                        About Atra<br />Agency
-                    </h2>
-                </div>
-                <p class="text-gray-600 mb-6 text-lg leading-relaxed">
-                    We are a team of passionate designers, developers, and
-                    strategists dedicated to creating exceptional digital
-                    experiences. Our mission is to help businesses grow through
-                    innovative design and technology.
-                </p>
-                <p class="text-gray-600 mb-10 text-lg leading-relaxed">
-                    With over 10 years of experience in the industry, we've
-                    worked with hundreds of clients across various sectors,
-                    delivering projects that exceed expectations.
-                </p>
-                <button
-                    class="bg-[#FF4D5A] text-white px-10 py-4 rounded-full hover:bg-[#FF6B76] transition-colors"
-                >
-                    Learn More
-                </button>
+---
+import { Image } from "astro:assets";
+import BgImage from "@/assets/images/bg-03.webp";
+---
+
+<!-- About Section -->
+<section class="grid md:grid-cols-2 bg-white min-h-screen">
+    <!-- Content -->
+    <div class="w-full flex items-center justify-end">
+        <div class="max-w-xl pr-20">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-16 h-1 bg-[#FF4D5A]"></div>
+                <header class="text-3xl md:text-4xl leading-tight font-bold">
+                    About Atra Agency
+                </header>
             </div>
-            <div class="grid grid-cols-2 gap-6">
-                <div class="space-y-6">
-                    <img
-                        src="https://images.unsplash.com/photo-1758520145175-aa3b593b81af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjBwZW9wbGUlMjB3b3JraW5nfGVufDF8fHx8MTc2NTUxOTkyNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                        alt="Team collaboration"
-                        class="w-full h-72 object-cover rounded-2xl"
-                    />
-                </div>
-                <div class="space-y-6 pt-12">
-                    <img
-                        src="https://images.unsplash.com/photo-1758873272921-4b64aef3c32b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMHRlYW0lMjB3b3Jrc3BhY2UlMjBvZmZpY2V8ZW58MXx8fHwxNzY1NTUxNjExfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                        alt="Creative workspace"
-                        class="w-full h-72 object-cover rounded-2xl"
-                    />
-                </div>
+
+            <p class="text-gray-600 mb-6 w-112.5">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elit, sed diam
+                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                erat, sed diam voluptua. At vero eos et accusam et justo duo
+                dolores et ea rebum. Stet clita kasd.
+            </p>
+
+            <!-- Small image -->
+            <div class="mt-8 w-full">
+                <Image
+                    src={BgImage}
+                    alt="Creative workspace"
+                    class="w-full h-full object-cover"
+                />
             </div>
         </div>
+    </div>
+
+    <!-- Large Image -->
+    <div class="w-full h-full min-h-screen">
+        <Image
+            src={BgImage}
+            alt="Creative workspace"
+            class="w-full h-full object-cover"
+            loading="eager"
+        />
     </div>
 </section>
