@@ -1,24 +1,22 @@
 ---
 import { Image } from "astro:assets";
-import Bento1 from "@/assets/images/bento1.webp";
+import bgProduct from "@/assets/images/products/bg-product.webp";
 ---
 
 <section class="grid md:grid-cols-2 min-h-screen">
     <div
-        class="bg-[#FDB827] flex items-center justify-center p-16 min-h-150 relative"
+        class="bg-primary flex items-center justify-center p-16 min-h-150 relative"
     >
-        <div class="relative w-full max-w-md">
-            <div class="relative w-full max-w-md">
-                <Image
-                    src={Bento1}
-                    alt="Bento box"
-                    class="w-full h-full object-cover"
-                    loading="eager"
-                />
-            </div>
+        <div class="relative w-full h-full min-h-screen">
+            <Image
+                src={bgProduct}
+                alt="Creative workspace"
+                class="w-full h-full object-cover rotate-12 -translate-y-10 -translate-x-28 drop-shadow-[0_0_10px_rgba(0,0,0,0.25)]"
+                loading="eager"
+            />
         </div>
         <div
-            class="absolute bottom-0 right-0 bg-black w-138 pb-5 md:block hidden"
+            class="absolute bottom-0 right-0 bg-tertiary w-138 pb-5 md:block hidden"
         >
             <div class="mx-12 text-white">
                 <h2 class="mt-10 uppercase font-bold text-base mb-5">
@@ -34,7 +32,7 @@ import Bento1 from "@/assets/images/bento1.webp";
         </div>
     </div>
     <div
-        class="bg-[#FF4D5A] flex items-center justify-center text-white min-h-150 px-12 md:px-28"
+        class="bg-secondary flex items-center justify-start text-white min-h-150 px-32"
     >
         <div class="max-w-md">
             <h1
@@ -48,7 +46,7 @@ import Bento1 from "@/assets/images/bento1.webp";
                 Lorem ipsum dolor sit amet, consetetur sadipscing elit
             </p>
             <button
-                class="bg-white text-[#FF4D5A] px-8 py-3 hover:bg-black hover:text-white transition-colors cursor-pointer uppercase font-semibold text-sm"
+                class="bg-white text-primary px-8 py-3 hover:bg-orange hover:text-white transition-colors cursor-pointer uppercase font-semibold text-sm"
             >
                 Hire Us
             </button>
