@@ -1,0 +1,89 @@
+---
+import { Image } from "astro:assets";
+import bgProduct from "@/assets/images/products/bg-product.webp";
+---
+
+<!-- About Section -->
+<section class="grid md:grid-cols-2 bg-white h-auto">
+    <!-- Content -->
+    <div class="w-full flex items-center justify-end">
+        <div class="max-w-xl pr-20">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-16 h-1 bg-orange"></div>
+                <header class="text-5xl leading-tight font-bold">
+                    Our awards and achievement
+                </header>
+            </div>
+
+            <!-- Awards Grid -->
+            <div class="grid grid-cols-2 grid-rows-2 gap-3">
+                <!-- Award 1 -->
+                <div
+                    class="bg-gray-50 p-8 flex flex-col justify-center items-center"
+                >
+                    <div
+                        class="bg-white text-xl font-bold text-center p-4 w-full"
+                    >
+                        <header class="text-xl font-bold">logoipsum</header>
+                    </div>
+
+                    <span class="text-center pt-5"
+                        >BEST APP DESIGN<br />AWARD</span
+                    >
+                </div>
+
+                <!-- Award 2 -->
+                <div
+                    class="bg-gray-50 p-8 flex flex-col justify-center items-center"
+                >
+                    <div
+                        class="bg-white text-xl font-bold text-center p-4 w-full"
+                    >
+                        <header class="text-xl font-bold">logoipsum'</header>
+                    </div>
+
+                    <span class="text-center pt-5">BEST DESIGN AWARD</span>
+                </div>
+
+                <!-- Award 3 -->
+                <div
+                    class="bg-gray-50 p-8 flex flex-col justify-center items-center"
+                >
+                    <div
+                        class="bg-white text-xl font-bold text-center p-4 w-full"
+                    >
+                        <header class="text-xl font-bold">LOGOIPSUM</header>
+                    </div>
+
+                    <span class="text-center pt-5"
+                        >BEST UI DESIGN<br />AWARD</span
+                    >
+                </div>
+
+                <!-- Award 4 -->
+                <div
+                    class="bg-gray-50 p-8 flex flex-col justify-center items-center"
+                >
+                    <div
+                        class="bg-white text-xl font-bold text-center p-4 w-full"
+                    >
+                        <header class="text-xl font-bold">logoipsum'</header>
+                    </div>
+
+                    <span class="text-center pt-5">BEST PRODUCT<br />AWARD</span
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Large Image -->
+    <div class="w-full h-full min-h-screen">
+        <Image
+            src={bgProduct}
+            alt="Creative workspace"
+            class="w-full h-full object-cover"
+            loading="eager"
+        />
+    </div>
+</section>
