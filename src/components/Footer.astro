@@ -1,0 +1,147 @@
+---
+import Facebook from "@/assets/icons/Facebook.svg";
+import YouTube from "@/assets/icons/YouTube.svg";
+import WhatsApp from "@/assets/icons/WhatsApp.svg";
+import Instagram from "@/assets/icons/Instagram.svg";
+import { Image } from "astro:assets";
+import ManageroLogo from "@/assets/images/logo.webp";
+---
+
+<section class="h-auto bg-white">
+    {/* Footer */}
+    <footer class="grid md:grid-cols-2">
+        {/* Left Side - Dark */}
+        <div
+            class="bg-white text-primary flex items-center justify-end px-16 py-20"
+        >
+            <div class="max-w-6xl">
+                {/* Logo */}
+                <div class="flex items-center">
+                    <a
+                        href="/"
+                        title="Managero Logo"
+                        aria-label="Ir a la página principal de ManageroRD"
+                    >
+                        <Image
+                            src={ManageroLogo}
+                            alt="ManageroRD Logo"
+                            class="w-50 h-22.5 object-cover"
+                            loading="eager"
+                        />
+                    </a>
+                </div>
+                <hr class="mb-10 border-t-2 border-gray-300/50" />
+
+                {/* Address */}
+                <div class="mb-12">
+                    <p
+                        class="text-primary text-sm mb-3 uppercase tracking-wide"
+                    >
+                        Our Address
+                    </p>
+                    <p class="text-primary text-sm tracking-wide">
+                        2561 SIMONS HOLLOW ROAD, CONNYNGHAM,<br />
+                        PA, 18219
+                    </p>
+                </div>
+
+                {/* Contact Info */}
+                <div class="grid grid-cols-2 gap-8 mb-12">
+                    <div>
+                        <p
+                            class="text-primary text-sm mb-3 uppercase tracking-wide"
+                        >
+                            Call us
+                        </p>
+                        <p class="text-primary text-sm tracking-wide">
+                            0123 456 789
+                        </p>
+                    </div>
+                    <div>
+                        <p
+                            class="text-primary text-sm mb-3 uppercase tracking-wide"
+                        >
+                            Email us
+                        </p>
+                        <p class="text-primary text-sm tracking-wide">
+                            CONTACT@ATRA.COM
+                        </p>
+                    </div>
+                </div>
+
+                {/* Social Icons */}
+                <div class="flex gap-4">
+                    <a
+                        href="https://www.facebook.com/profile.php?id=100092535210339"
+                        target="_blank"
+                        title="Managero Facebook"
+                        aria-label="Ir al Facebook ManageroRD"
+                        rel="noopener noreferrer"
+                        class="size-6 flex items-center justify-center"
+                    >
+                        <Facebook
+                            class="size-4 text-primary hover:text-orange"
+                        />
+                    </a>
+                    <a
+                        href="https://www.youtube.com/@Managerord"
+                        target="_blank"
+                        aria-label="Ir al Youtube ManageroRD"
+                        rel="nooperer noreferer"
+                        title="Managero Youtube"
+                        class="size-6 flex items-center justify-center"
+                    >
+                        <YouTube
+                            class="size-4 text-primary hover:text-orange"
+                        />
+                    </a>
+                    <a
+                        href="https://wa.me/18097191911"
+                        target="_blank"
+                        aria-label="Ir al Youtube ManageroRD"
+                        rel="nooperer noreferer"
+                        title="Managero Youtube"
+                        class="size-6 flex items-center justify-center"
+                    >
+                        <WhatsApp
+                            class="size-4 text-primary hover:text-orange"
+                        />
+                    </a>
+                    <a
+                        href="https://www.instagram.com/managerord"
+                        target="_blank"
+                        aria-label="Ir al Youtube ManageroRD"
+                        rel="nooperer noreferer"
+                        title="Managero Youtube"
+                        class="size-6 flex items-center justify-center"
+                    >
+                        <Instagram
+                            class="size-4 text-primary hover:text-orange"
+                        />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        {/* Right Side - Coral */}
+        <div
+            class="px-16 bg-secondary flex items-center justify-start text-white"
+        >
+            <div class="max-w-lg">
+                <header class="text-5xl leading-tight font-bold mb-8">
+                    Have an idea in<br />your mind?
+                </header>
+
+                <p class="text-white w-112.5 text-3xl font-light mb-10">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elit
+                </p>
+
+                <button
+                    class="bg-white text-primary px-8 py-3 hover:bg-orange hover:text-white transition-colors cursor-pointer uppercase font-semibold text-sm"
+                >
+                    DROP US MAIL
+                </button>
+            </div>
+        </div>
+    </footer>
+</section>
