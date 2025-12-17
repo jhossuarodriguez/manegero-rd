@@ -4,33 +4,29 @@ import bgProduct from "@/assets/images/products/bg-product.webp";
 ---
 
 <!-- About Section -->
-<section class="grid md:grid-cols-2 bg-white min-h-screen">
+<section class="grid md:grid-cols-2 grid-rows-2 bg-white min-h-screen">
     <!-- Content -->
     <div class="w-full flex items-center justify-end bg-primary">
         <div class="max-w-xl pr-20">
             <div class="flex items-center gap-4 mb-8">
-                <div class="w-16 h-1 bg-orange"></div>
                 <header
-                    class="text-3xl md:text-4xl leading-tight font-bold text-white"
+                    class="relative text-5xl leading-tight font-bold text-white"
                 >
+                    <div class="absolute w-16 h-1 bg-orange"></div>
                     Have an idea in your mind?
                 </header>
             </div>
 
-            <p class="text-white mb-6 w-112.5">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elit, sed diam
-                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                erat, sed diam voluptua. At vero eos et accusam et justo duo
-                dolores et ea rebum. Stet clita kasd.
+            <p class="text-white mb-6 w-112.5 text-3xl">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elit
             </p>
 
-            <!-- Small image -->
-            <div class="mt-8 w-full">
-                <Image
-                    src={bgProduct}
-                    alt="Creative workspace"
-                    class="w-full h-full object-cover"
-                />
+            <div>
+                <button
+                    class="bg-white text-primary px-8 py-3 hover:bg-orange hover:text-white transition-colors cursor-pointer uppercase font-semibold text-sm"
+                >
+                    DROP US MAIL
+                </button>
             </div>
         </div>
     </div>
@@ -43,5 +39,45 @@ import bgProduct from "@/assets/images/products/bg-product.webp";
             class="w-full h-full object-cover"
             loading="eager"
         />
+    </div>
+
+    <!-- Large Image - Second Row -->
+    <div class="w-full h-full min-h-screen">
+        <Image
+            src={bgProduct}
+            alt="Creative workspace"
+            class="w-full h-full object-cover"
+            loading="eager"
+        />
+    </div>
+
+    <!-- Content - Second Row -->
+    <div class="w-full flex items-center justify-start bg-primary">
+        <div class="max-w-xl pl-20">
+            <div class="flex items-center gap-4 mb-8">
+                <header
+                    class="relative text-5xl leading-tight font-bold text-white"
+                >
+                    <div class="absolute w-16 h-1 bg-orange"></div>
+                    Herman, Schmidt and O'Kon​
+                </header>
+            </div>
+
+            <p class="text-white mb-6 w-112.5">
+                Provident asperiores rem. Ipsa laboriosam rerum culpa ex.
+                Temporibus occaecati dolorem aut saepe. Perspiciatis enim
+                consequatur impedit a doloremque optio ducimus debitis eum.
+                Alias qui maiores dolores voluptatem non alias dicta. Beatae
+                placeat a reiciendis omnis asperiores quibusdam dolor.
+            </p>
+
+            <div>
+                <button
+                    class="bg-white text-primary px-8 py-3 hover:bg-orange hover:text-white transition-colors cursor-pointer uppercase font-semibold text-sm"
+                >
+                    DROP US MAIL
+                </button>
+            </div>
+        </div>
     </div>
 </section>
