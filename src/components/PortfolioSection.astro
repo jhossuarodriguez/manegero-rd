@@ -1,0 +1,136 @@
+---
+import { Image } from "astro:assets";
+import bento1 from "@/assets/images/bento1.webp";
+import bg03 from "@/assets/images/bg-03.webp";
+---
+
+<!-- Portfolio Section -->
+<section class="bg-white w-full">
+    <div class="w-full">
+        <div class="grid grid-cols-1 items-stretch">
+            <!-- Portfolio Grid -->
+            <div class="col-span-4 grid grid-cols-4">
+                <!-- Title -->
+                <div class="aspect-square overflow-hidden">
+                    <div
+                        class="w-full h-full flex items-center justify-center bg-white"
+                    >
+                        <h2 class="text-[45px] font-bold leading-tight">
+                            Our<br /> Selected<br />work
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 1 -->
+                <div
+                    class="aspect-square overflow-hidden cursor-pointer relative group"
+                >
+                    <Image
+                        src={bento1}
+                        alt="Portfolio item 1"
+                        class="w-full h-full object-cover"
+                    />
+                    <div
+                        class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300"
+                    >
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div
+                    class="aspect-square overflow-hidden cursor-pointer relative group"
+                >
+                    <Image
+                        src={bento1}
+                        alt="Portfolio item 2"
+                        class="w-full h-full object-cover"
+                    />
+                    <div
+                        class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300"
+                    >
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div
+                    class="aspect-square overflow-hidden cursor-pointer relative group"
+                >
+                    <Image
+                        src={bg03}
+                        alt="Portfolio item 3"
+                        class="w-full h-full object-cover"
+                    />
+                    <div
+                        class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300"
+                    >
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div
+                    class="aspect-square overflow-hidden cursor-pointer relative group"
+                >
+                    <Image
+                        src={bento1}
+                        alt="Portfolio item 4"
+                        class="w-full h-full object-cover"
+                    />
+                    <div
+                        class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300"
+                    >
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 5 -->
+                <div
+                    class="aspect-square overflow-hidden cursor-pointer relative group"
+                >
+                    <Image
+                        src={bg03}
+                        alt="Portfolio item 5"
+                        class="w-full h-full object-cover"
+                    />
+                    <div
+                        class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300"
+                    >
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 6 -->
+                <div
+                    class="aspect-square overflow-hidden cursor-pointer relative group"
+                >
+                    <Image
+                        src={bg03}
+                        alt="Portfolio item 6"
+                        class="w-full h-full object-cover"
+                    />
+                    <div
+                        class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300"
+                    >
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 6 with Arrow -->
+                <div
+                    class="aspect-square bg-white flex items-center justify-center"
+                >
+                    <button class="cursor-pointer">
+                        <svg
+                            class="w-20 h-20 text-orange"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
