@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import BgImage from "@/assets/images/bento1.webp";
+import bgProduct from "@/assets/images/products/bg-product.webp";
 ---
 
 <!-- About Section -->
@@ -25,7 +25,7 @@ import BgImage from "@/assets/images/bento1.webp";
             <!-- Small image -->
             <div class="mt-8 w-full">
                 <Image
-                    src={BgImage}
+                    src={bgProduct}
                     alt="Creative workspace"
                     class="w-full h-full object-cover"
                 />
@@ -36,7 +36,7 @@ import BgImage from "@/assets/images/bento1.webp";
     <!-- Large Image -->
     <div class="w-full h-full min-h-screen -translate-y-56">
         <Image
-            src={BgImage}
+            src={bgProduct}
             alt="Creative workspace"
             class="w-full h-full object-cover"
             loading="eager"
